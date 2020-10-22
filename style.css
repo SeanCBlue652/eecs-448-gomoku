@@ -1,0 +1,22 @@
+.title
+{
+    text-align: center;
+}
+#board
+{
+    display:block;
+    margin: 50px auto;
+    /* width: 450px;
+    height:450px; */
+    background-color: #e7be72;
+
+}
+#btn
+{
+    display:block;
+    margin:0 auto;
+    width:100px;
+    background-color:#2e75f8;
+    color:white;
+    border-radius:10px;
+}
