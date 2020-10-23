@@ -24,7 +24,8 @@ function newgame()
         }
     }
     cleanBoard();
-   drawline();
+    drawline();
     over=false;
+    flag=false;
 }
 
