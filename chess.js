@@ -26,8 +26,9 @@ board.addEventListener('click',function(a)
 {
     let dx=Math.floor((a.offsetX)/30)*30+15;//15
     let dy=Math.floor((a.offsetY)/30)*30+15;
+    
 
-    if(map[(dx-15)/30][(dy-15)/30]==0)//0
+    if(map[(dx-15)/30][(dy-15)/30]==0 && !flag)//0
     {
         drawchess(dx,dy,chesscolor[step%2]);
         map[(dx-15)/30][(dy-15)/30]=chesscolor[step%2];
