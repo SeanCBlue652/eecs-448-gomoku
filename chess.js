@@ -1,11 +1,11 @@
 
-var chesscolor=['black','white'];
-var step=0;
-var map=[];
-for(var i=0;i<15;i++)
+let chesscolor=['black','white'];
+let step=0;
+let map=[];
+for(let i=0;i<15;i++)
 {
     map[i]=[];
-    for(var j=0;j<15;j++)
+    for(let j=0;j<15;j++)
     {
         map[i][j]=0;
     }
@@ -24,14 +24,14 @@ function drawchess (x,y,color)
 //not finish do not do the function: the position has already place chess
 board.addEventListener('click',function(a)
 {
-    var dx=Math.floor((a.offsetX)/30)*30+15;//15
-    var dy=Math.floor((a.offsetY)/30)*30+15;
+    let dx=Math.floor((a.offsetX)/30)*30+15;//15
+    let dy=Math.floor((a.offsetY)/30)*30+15;
 
     if(map[(dx-15)/30][(dy-15)/30]==0)//0
     {
         drawchess(dx,dy,chesscolor[step%2]);
         map[(dx-15)/30][(dy-15)/30]=chesscolor[step%2];
-        for(var i=0;i<4;i++)
+        for(let i=0;i<4;i++)
         {
             checkwin((dx-15)/30,(dy-15)/30, chesscolor[step%2],mode[i]);
         }

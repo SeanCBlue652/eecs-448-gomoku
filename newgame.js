@@ -1,4 +1,4 @@
-var btn =document.querySelector("#btn");
+let btn =document.querySelector("#btn");
 btn.addEventListener("click",function()
 {
     newgame();
@@ -15,10 +15,10 @@ function cleanBoard()
 //start new game
 function newgame()
 {
-    for(var i=0;i<15;i++)
+    for(let i=0;i<15;i++)
     {
         map[i]=[];
-        for(var j=0;j<15;j++)
+        for(let j=0;j<15;j++)
         {
             map[i][j]=0;
         }

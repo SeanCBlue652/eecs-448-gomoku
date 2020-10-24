@@ -1,5 +1,5 @@
-var board=document.querySelector("#board");
-var context=board.getContext("2d");
+let board=document.querySelector("#board");
+let context=board.getContext("2d");
 context.strokeStyle="#000000";
 window.onload=function()
 {
@@ -8,7 +8,7 @@ window.onload=function()
 //draw the line of board 
 function drawline()
 {
-    for(var i=0;i<15;i++)
+    for(let i=0;i<15;i++)
     {
         
         context.moveTo(i*30+15,15);

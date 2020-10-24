@@ -1,5 +1,5 @@
-var flag=false;
-var mode=
+let flag=false;
+let mode=
 [
     [1,0],
     [0,1],
@@ -9,8 +9,8 @@ var mode=
 
 function checkwin(x,y,color,mode)
 {
-    var count =0;
-    for(var i=1;i<5;i++)
+    let count =0;
+    for(let i=1;i<5;i++)
     {
         if(map[x+i*mode[0]])
         {
@@ -25,7 +25,7 @@ function checkwin(x,y,color,mode)
         }
         
     }
-    for(var j=1;j<5;j++)
+    for(let j=1;j<5;j++)
     {
         if(map[x-j*mode[0]])
         {
