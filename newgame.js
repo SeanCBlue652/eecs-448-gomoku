@@ -26,5 +26,6 @@ function newgame()
     cleanBoard();
     drawline();
     over=false;
+    flag=false;
 }
 
