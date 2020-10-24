@@ -8,8 +8,27 @@
     <body>
         <!-- show the name of game :"Gomoku" in the top -->
         <h3 class="title">Gomoku</h3> 
+        
         <!-- the game board is 450px*450px -->
         <canvas id="board"width="450" height="450"></canvas>
+        
+        <!-- display the scoreboard -->
+        <div id="scoreBoard">
+        	<scan id="disp1">Score: </scan>
+        	<div id="imgsc">
+			<img id="img1"></img>
+			<scan id='sc1'>0</scan>
+			<img id="img2"></img>
+			<scan id='sc2'>0</scan>
+		</div>
+        </div>
+        
+        
+        <!-- code for loading in the images -->
+        <script src="resource.js"></script>
+        <!-- code for displaying the score -->
+        <script src="score.js"></script>
+        
         <!-- the button :click to new game -->
         <button id="btn">New Game</button>
         <!-- the function to draw line of board line -->
@@ -17,7 +36,7 @@
         <!-- the function to draw chess and place chess-->
         <script src="chess.js"></script>
         <!-- the function to check win -->
-        <script src="checkwin.js"></script>
+        <script src="checkwin.js"></script> 
         <!-- the function to clean the board and begin new game-->
         <script src="newgame.js"></script>
 </html>

@@ -20,3 +20,16 @@
     color:white;
     border-radius:10px;
 }
+
+#scoreBoard
+{
+    text-align: center;
+    display: block;
+    font-weight: bold;
+}
+
+#imgsc
+{
+    font-weight: bold;
+    font-size: 28px;
+}

@@ -42,6 +42,10 @@ function checkwin(x,y,color,mode)
     }
     if(count>=4)
     {
+    	//
+    	//update the score
+    	updateScore(color);
+    
         alert(color + " win!" );
         flag=true;
     }

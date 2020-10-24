@@ -3,6 +3,10 @@ let context=board.getContext("2d");
 context.strokeStyle="#000000";
 window.onload=function()
 {
+    //
+    //load the images for scoreBoard
+    scoreBoardImages();
+
     drawline();
 }
 //draw the line of board 

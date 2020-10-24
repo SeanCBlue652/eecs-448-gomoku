@@ -38,7 +38,7 @@ board.addEventListener('click',function(a)
         step++;
     } 
     if(flag)
-    {
+    {       
         alert("Game is over, please start new game");
         return;
     }
