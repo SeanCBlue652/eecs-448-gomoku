@@ -1,0 +1,17 @@
+Person-Hours Spent
+
+From Project 1 and Project 2, we have 1516* and 1230* lines of code respectively. The person-hours per lines of code are 1/108 [person-hour/loc] and 1/82 [person-hour/loc] respectively for each aformentioned project. The average is 1/94 [person-hour/loc].
+
+With the estimated lines of code for project 3 to be lower at around 400-500 lines of code, we estimate that it would take around 4-5 person-hours to code and implement the basic verison of Gomoku without AI, or extra features.
+The estimation using lines of code does not include time doing documentation.
+
+*+- To all team members, please log the day-to-day hours worked on the project -+*
+Log:
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Member			|Day			|Time Spent
+**********************************************************************************
+Peter Tso		|10/23			|1:11:46
+			|10/24			|26:16
+			|10/25			|
+**********************************************************************************
+
