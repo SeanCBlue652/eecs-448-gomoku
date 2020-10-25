@@ -6,7 +6,7 @@ this design paradigm is that Function Oriented Design is derived from Top Down F
 two critical aspects that make it easier to program the game and add later functionality to. Firstly, the top down functional 
 decomposition aspect of function oriented design allows functions to be split into smaller and smaller sub functions help make code 
 that maybe too complex or too large on its own into something that can be more readily managed, or implemented such as updating the 
-state of the game, which depends on multiple sub functions. The game logic really we wanted to use really depend on being able to split 
+state of the game, which depends on multiple sub functions. The game logic we wanted to use really depend on being able to split 
 into  simpler and more simple sub functions that, together make a more complex portion of the game. Secondly, component level design 
 aspect of the design paradigm are defined by function oriented design to be components that are clearly defined functions. 
 The idea that the each component is a clearly defined function that controls a certain aspect of the game makes it easy to program 
