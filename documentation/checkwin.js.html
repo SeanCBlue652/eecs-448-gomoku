@@ -7,6 +7,14 @@ let mode=
     [1,-1],
 ];
 
+
+/**
+*
+* @preconditions -- game started and players have placed tiles
+* @postconditions -- winner is the player with 5 tiles in a row
+* @parameters -- array of tiles to check color and number
+*
+**/
 function checkwin(x,y,color,mode)
 {
     let count =0;
