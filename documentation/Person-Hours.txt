@@ -12,15 +12,31 @@ Member			|Day			|Time Spent
 **********************************************************************************
 Peter Tso		|10/23			|1:11:46	Testing, etc.
 			|10/24			|26:16		Coding
-			|10/25			|5:57:39	Documentation
+			|10/25			|6:02:32	Documentation(LOC, Software Architecture, Design Paradigm, cleanup)
 
 Jacob Johnston		|10/23			|40:00
 			|10/25			|45:00
-			
+
 Tao Yang		|10/21			|2:30:00	Coding
 			|10/22			|30:00		Coding
 
 Sean Cunningham		|10/16		|15:00		Created and Configured the Repository
 					|10/24		|30:00		Coding
 					|10/25		|30:00		Created the UML Diagram
+					
+Samuel Gilchrist 	|10/24			|1:20:00	Documentation
+			|10/25			|30:00		Documentation
 **********************************************************************************
+
+Total person-hours spent: 16:39:-- hours
+Person-hours spent on coding: 4 hours
+Estimated person-hours: 4-5 hours
+
+
+Note: The time spent programming was spot on, but the last two projects had far fewer, and far less comprehensive documentation.
+The doucmentation for this project took most of the time. As the person who did LOC, Software Architecture, and Design Paradigm,
+the documentation was heavy and quite unexpectedly difficult;I got stuck mutliple times. It is no doubt others on the team
+who also did documentation probably felt the same.
+
+However, this just shows that using LOC as a method for estimating person-hours is inherently flawed as it does not consider
+other work such as doucmentation or testing.
