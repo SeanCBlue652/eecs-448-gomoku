@@ -1,8 +1,24 @@
+/**
+*
+* @preconditions -- no game currently in progress
+* @postconditions -- new game started
+* @parameters -- none
+*
+**/
+
 let btn =document.querySelector("#btn");
 btn.addEventListener("click",function()
 {
     newgame();
 })
+
+/**
+*
+* @preconditions -- game is completed
+* @postconditions -- all tiles removed from board
+* @parameters -- none
+*
+**/
 
 //clean the board
 //this place have some problem need to solve
@@ -11,6 +27,14 @@ function cleanBoard()
     context.fillStyle = "#e7be72";
     context.fillRect(0, 0, board.width, board.height);
 }
+
+/**
+*
+* @preconditions -- game is completed
+* @postconditions -- game is ended and board is cleared of all tiles
+* @parameters -- none
+*
+**/
 
 //start new game
 function newgame()
