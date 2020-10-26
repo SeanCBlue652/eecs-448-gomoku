@@ -1,0 +1,18 @@
+    -----DESIGN PATTERNS:-----
+  For the our third project, we decided to program the game of Gomoku using Javascript, the same language we used in project 2. This allowed for a much easier
+and more natural reuse of our code techniques and general solutions, or software design patterns, that we each picked up from work on the last project we
+worked on as a team. As such, we utilized multiple specific design patterns during the work on this project. Relevantly to this course’s coverage of the GoF
+types of design patterns, our work utilized creational, structural, and behavioral patterns.
+
+  In terms of creational design patterns, we seem to have mostly utilized both abstract factory and singleton pattern design. According to how our board
+logic class is designed with only one instance with a corresponding global point of access, we can say that we did utilize singleton design. On the other
+hand, based on how we coded the win conditions and, consequently, effectively the design of how the game pieces themselves are understood as simply as they
+are within the code, we also utilized abstract factory design. In terms of structural design patterns, we seem to have utilized both flyweight and decorater
+patterns. We utilized flyweight design patterns to help implement our board, and we used decorater design patterns to implement a score keeping feature into
+our game based on the same flexible interface design. Finally, for behavioral design patterns, we used the command pattern and memento pattern. We used the
+command pattern by encapsulating some interior requests as their own objects, such as how we programmed our win condition and how we visually draw lines to
+represent our board game. We used the memento pattern when we captured and externalized the internal state of our board status to allow it to be safely reset
+and restored to the original state upon every new game.
+
+  These design patterns helped us solve new problems while saving time and strengthening our understanding of code practices.
+    -----                -----

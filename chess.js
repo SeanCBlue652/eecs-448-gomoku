@@ -13,7 +13,7 @@ for(let i=0;i<15;i++)
 //draw chess
 function drawchess (x,y,color)
 {
-    
+
     context.beginPath();
     context.arc(x,y,13,0,Math.PI*2,false);
     context.closePath();
@@ -37,7 +37,7 @@ board.addEventListener('click',function(a)
             checkwin((dx-15)/30,(dy-15)/30, chesscolor[step%2],mode[i]);
         }
         step++;
-    } 
+    }
     if(flag)
     {       
         alert("Game is over, please start new game");
