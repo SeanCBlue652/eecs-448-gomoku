@@ -16,7 +16,10 @@ Peter Tso		|10/23			|1:11:46	Testing, etc.
 
 Jacob Johnston		|10/23			|40:00
 			|10/25			|45:00
-			
+
 Tao Yang		|10/21			|2:30:00	Coding
 			|10/22			|30:00		Coding
+
+Samuel Gilchrist |10/24			|1:20:00			Documentation
+			|10/25			|30:00			Documentation
 **********************************************************************************
