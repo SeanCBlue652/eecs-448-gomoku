@@ -12,11 +12,11 @@ Member			|Day			|Time Spent
 **********************************************************************************
 Peter Tso		|10/23			|1:11:46	Testing, etc.
 			|10/24			|26:16		Coding
-			|10/25			|6:02:32	Documentation(LOC, Software Architecture, Design Paradigm, cleanup)
+			|10/25			|5:57:39	Documentation(LOC, Software Architecture, Design Paradigm, etc)
 
 Jacob Johnston		|10/23			|40:00
 			|10/25			|45:00
-
+			
 Tao Yang		|10/21			|2:30:00	Coding
 			|10/22			|30:00		Coding
 			|10/25			|1:14:00	Working on Software Arcgitecture
@@ -24,12 +24,9 @@ Tao Yang		|10/21			|2:30:00	Coding
 Sean Cunningham	|10/16			|15:00		Created and Configured the Repository
 			|10/24			|30:00		Coding
 			|10/25			|30:00		Created the UML Diagram
-					
-Samuel Gilchrist 	|10/24			|1:20:00	Documentation
-			|10/25			|30:00		Documentation
 **********************************************************************************
 
-Total person-hours spent: 16:39:-- hours
+Total person-hours spent: 16:34:-- hours
 Person-hours spent on coding: 4 hours
 Estimated person-hours: 4-5 hours
 
