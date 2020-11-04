@@ -35,46 +35,6 @@ doc_aiSwitch.addEventListener('click', () => {
 /**
 *	MAIN CODE
 */
-function assign(vBoard){
-	//assign as a string
-	let ydim = vBoard.length;
-	let xdim = vBoard[0].length;
-	let output = new Array(ydim);
-	for(let i = 0; i < ydim; i++){
-		output[i] = 0b000000000000000;
-		for(let k = 0; k < xdim; k++){
-			let mask = (0b100000000000000 >> k);
-			if(vBoard[i][k] != 0){
-				output[i] |= mask;
-			}
-		}
-	}
-	
-	return output;
-}
-
-function calculatePosition(vBoard, c, xdim, ydim){
-	if(c >= map_cache){
-		let max = 0;
-		let pos = [0, 0];
-		for(let i = 0; i < ydim; i++){
-			for(let k = 0; k < xdim; k++){
-				max = (max <= vBoard[i][k]) ? vBoard[i][k] : max;
-				pos = (max <= vBoard[i][k]) ? [i, k] : pos;
-			}
-		}
-		return pos;
-	}
-	c++;
-	return calculatePosition(vBoard, c, xdim, ydim);
-	
-}
-
-function output(vBoard, ydim){
-	for(let i = 0; i < ydim; i++){
-		console.log(i + ": " + vBoard[i].toString(2));
-	}
-}
 
 function pos_check(a, b){
 	return (a[0] == b[0]) ? ((a[1] == b[1]) ? true : false) : false;
@@ -107,15 +67,4 @@ function simpleRandomAi(){
 	}
 	step++;
 	
-}
-
-//ai function
-function runAi(rBoard){
-	//change the board into values
-	let ydim = rBoard.length;
-	let xdim = rBoard[0].length;
-	vBoard = assign(rBoard);
-
-	
-	output(vBoard, ydim);
 }
