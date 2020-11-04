@@ -6,6 +6,10 @@ window.onload=function()
     //
     //load the images for scoreBoard
     scoreBoardImages();
+    
+    //
+    //setup simpleAi
+    simpleAiSetup();
 
     drawline();
 }
