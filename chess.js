@@ -64,6 +64,8 @@ board.addEventListener('click',function(a)
     	///////////////////////////////
     	/////NOT IMPLEMENTED YET///////
     	///////////////////////////////
+    	
+    	//this is a random ai
     	simpleRandomAi();
     		
     		
