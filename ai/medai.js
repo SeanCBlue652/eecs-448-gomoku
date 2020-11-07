@@ -180,11 +180,25 @@ function zt_medai(bBoard, turns){
 			if(max_v > g_weight - k_weight){
 				p = max_p;
 			}
-			map[p[0]][p[1]] = chesscolor[step % 2];
-			drawchess((p[0] * 30) + 15, (p[1] * 30) + 15, chesscolor[step % 2]);
-			for(let k = 0; k < 4; k++){
-				checkwin(p[0], p[1], chesscolor[step % 2], mode[k]);
+			if(isBlack)
+			{
+				map[p[0]][p[1]] = chesscolor[step % 2];
+				drawchess((p[0] * 30) + 15, (p[1] * 30) + 15, chesscolor[step % 2]);
+				for(let k = 0; k < 4; k++)
+				{
+					checkwin(p[0], p[1], chesscolor[step % 2], mode[k]);
+				}
 			}
+			else
+			{
+				map[p[0]][p[1]] = chesscolor[(step+1) % 2];
+				drawchess((p[0] * 30) + 15, (p[1] * 30) + 15, chesscolor[(step+1) % 2]);
+				for(let k = 0; k < 4; k++)
+				{
+					checkwin(p[0], p[1], chesscolor[(step+1) % 2], mode[k]);
+				}
+			}
+			
 			step++;
 			break;
 		}
