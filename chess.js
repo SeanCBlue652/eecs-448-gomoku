@@ -2,6 +2,21 @@
 let chesscolor=['black','white'];
 let step=0;
 let map=[];
+let isBlack=true;
+
+function tt(id)
+{
+	let aa=document.getElementById(id);
+	if(aa.value=="Black")
+	{
+		isBlack=true;
+	}
+	else if (aa.value=="White")
+	{
+		isBlack=false;
+	}
+}
+
 for(let i=0;i<15;i++)
 {
     map[i]=[];
@@ -31,12 +46,25 @@ board.addEventListener('click',function(a)
     if(!flag && !aiSwitch){
     	console.log('normal_play');
 	if(map[(dx-15)/30][(dy-15)/30]==0){
-		drawchess(dx,dy,chesscolor[step%2]);
-		map[(dx-15)/30][(dy-15)/30]=chesscolor[step%2];
-		for(let i=0;i<4;i++)
+		if(isBlack)
 		{
-	  	  checkwin((dx-15)/30,(dy-15)/30, chesscolor[step%2],mode[i]);
+			drawchess(dx,dy,chesscolor[step%2]);
+			map[(dx-15)/30][(dy-15)/30]=chesscolor[step%2];
+			for(let i=0;i<4;i++)
+			{
+	  	  	checkwin((dx-15)/30,(dy-15)/30, chesscolor[step%2],mode[i]);
+			}
 		}
+		else
+		{
+			drawchess(dx,dy,chesscolor[(step+1)%2]);
+			map[(dx-15)/30][(dy-15)/30]=chesscolor[(step+1)%2];
+			for(let i=0;i<4;i++)
+			{
+	  	  	checkwin((dx-15)/30,(dy-15)/30, chesscolor[(step+1)%2],mode[i]);
+			}
+		}
+		
 		step++;
 	}
     }
@@ -44,11 +72,24 @@ board.addEventListener('click',function(a)
     	//normal code
     	console.log('ai_play');
     	if(map[(dx-15)/30][(dy-15)/30] == 0){
-    		drawchess(dx, dy, chesscolor[step % 2]);
-    		map[(dx-15)/30][(dy-15)/30] = chesscolor[step % 2]
-    		for(let i = 0; i < 4; i++){
-    			checkwin((dx-15)/30,(dy-15)/30, chesscolor[step % 2],mode[i]);
-    		}
+			if(isBlack)
+			{
+				drawchess(dx, dy, chesscolor[step % 2]);
+    			map[(dx-15)/30][(dy-15)/30] = chesscolor[step % 2]
+				for(let i = 0; i < 4; i++)
+				{
+    				checkwin((dx-15)/30,(dy-15)/30, chesscolor[step % 2],mode[i]);
+    			}
+			}
+    		else
+			{
+				drawchess(dx, dy, chesscolor[(step+1)%2]);
+    			map[(dx-15)/30][(dy-15)/30] = chesscolor[(step+1)%2]
+				for(let i = 0; i < 4; i++)
+				{
+    				checkwin((dx-15)/30,(dy-15)/30, chesscolor[(step+1)%2],mode[i]);
+    			}
+			}
     		let u = Math.floor((dx-15)/30);
     		let v = Math.floor((dy-15)/30);
     		console.log("u: " + u + " v: " + v);
@@ -68,7 +109,7 @@ board.addEventListener('click',function(a)
     	//this is a random ai
     	//simpleRandomAi();
     	simpleRudimentaryAi();
-    		
+    	// useadvAI();//can not use the ai, still need to work
     		
     	}        
     }

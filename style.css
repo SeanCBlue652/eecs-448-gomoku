@@ -33,3 +33,19 @@
     font-weight: bold;
     font-size: 28px;
 }
+
+#selectColor
+{
+    text-align: center;
+    margin: 10px auto;
+    display: block;
+    font-weight: bold;
+}
+
+#aiControls
+{
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    font-weight: bold;
+}

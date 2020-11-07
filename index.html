@@ -13,18 +13,26 @@
         <canvas id="board"width="450" height="450"></canvas>
         
         <!-- display the scoreboard -->
-        <div id="scoreBoard">
+        <li id="scoreBoard">
         	<scan id="disp1">Score: </scan>
         	<div id="imgsc">
 			<img id="img1"></img>
 			<scan id='sc1'>0</scan>
 			<img id="img2"></img>
 			<scan id='sc2'>0</scan>
-		</div>
+        </li>
+        
+        
+        <div id="selectColor">
+            <div >Please first player choose the chess color</div>
+            <select id="option" onchange ="tt(this.id)">
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+            </select>
         </div>
-        <div id="aiControls">
+        <li id="aiControls">
         	<button id="ai_switch">AI OFF</button>
-        </div>
+        </li>
         
         
         <!-- code for loading in the images -->
@@ -44,6 +52,8 @@
         <script src="newgame.js"></script>
         
         <!-- code for ai -->
-	<script src="ai/ai.js"></script>
-	<script src="ai/medai.js"></script>
+	    <script src="ai/ai.js"></script>
+        <script src="ai/medai.js"></script>
+        <script src="ai/advai.js"></script>
+    </body>
 </html>
