@@ -67,7 +67,7 @@ board.addEventListener('click',function(a)
     	
     	//this is a random ai
     	//simpleRandomAi();
-    	zt_medai(map);
+    	simpleRudimentaryAi();
     		
     		
     	}        
