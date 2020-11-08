@@ -1,8 +1,25 @@
+let t = false;
+
+//run the runAllTests function at button press
+document.getElementById('d_btn').addEventListener('click', () => {
+	if(!t){
+		t = true;
+		runAllTests();
+	}
+	else{
+		alert("Run tests has already been toggled\n");
+	}
+});
+
+
 /**
 *	@pre Must have window loaded
 *	@post runs all tests, display to console
 */
 function runAllTests(){
+	//clear the board
+	test_clear();
+	
 	//runs the resource testing
 	resource_test();
 	

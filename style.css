@@ -58,3 +58,25 @@ p.warning{
 	font-family: monospace;
 }
 
+p.dWarning{
+	color: red;
+	font-family: monospace;
+}
+
+div.debugger{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 5px;
+}
+
+button.dbtn{
+	color: white;
+	background-color: darkred;
+	border-radius: 10px;
+}
+
+button.dbtn:hover{
+	background-color: red;
+}
+
