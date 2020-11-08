@@ -33,3 +33,14 @@
 	+
 	+
 	+
+	
++Defect 03
+	+Nov 08 2020 2:16 PM
+	+Peter Tsi
+	+The defect affects the loadResources Test. Sometimes
+	 the img will load after code has ran, resulting in
+	 inaccurate results. Added setTimeout to combat this,
+	 however this is not optimal.
+	+
+	+
+	+
