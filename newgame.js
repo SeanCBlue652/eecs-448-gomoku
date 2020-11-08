@@ -1,4 +1,7 @@
+//assigns a button element
 let btn =document.querySelector("#btn");
+
+//on click reset the game
 btn.addEventListener("click",function()
 {
     newgame();
@@ -16,6 +19,7 @@ function cleanBoard()
 //start new game
 function newgame()
 {
+    //zerofill array
     for(let i=0;i<15;i++)
     {
         map[i]=[];
@@ -24,6 +28,7 @@ function newgame()
             map[i][j]=0;
         }
     }
+    //reset the board
     cleanBoard();
     drawline();
     over=false;
