@@ -69,15 +69,17 @@ function simpleAiSetup(){
 *	@pre must have simpleAiSetup() called beforehand
 *	@post assigns the board with a random piece
 */
-function simpleRandomAi(){
+function simpleRandomAi(d){
 	let arg0 = Math.floor(Math.random() * pos_cache.length);
 	let u = pos_cache[arg0][0];
 	let v = pos_cache[arg0][1];
 	
 	drawchess((30 * u) + 15, (30 * v) + 15, chesscolor[step % 2]);
 	map[u][v] = chesscolor[step % 2];
-	for(let i = 0; i < 4; i++){
-		checkwin(u, v, chesscolor[step % 2], mode[i]);
+	if(d){
+		for(let i = 0; i < 4; i++){
+			checkwin(u, v, chesscolor[step % 2], mode[i]);
+		}
 	}
 	for(let i = 0; i < pos_cache.length; i++){
 		if(pos_check([u, v], pos_cache[i])){
