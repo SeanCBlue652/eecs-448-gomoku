@@ -196,7 +196,7 @@ function gt_checkwin(x,y,color, mode, dBoard, value, rD){
 *	@post Interface for AI
 */
 function simpleRudimentaryAi(){
-	zt_medai(map, 2);
+	zt_medai(map, 2, true);
 }
 
 /**
@@ -248,7 +248,7 @@ function zeroMatrix(length){
 *	@pre Must have valid bBoard Object and turns > 0
 *	@post assigns the piece to the board
 */
-function zt_medai(bBoard, turns){
+function zt_medai(bBoard, turns, d){
 	//debug
 	console.log('zt_medai called');
 	let max_turns = turns;
@@ -308,8 +308,10 @@ function zt_medai(bBoard, turns){
 			drawchess((p[0] * 30) + 15, (p[1] * 30) + 15, chesscolor[step % 2]);
 			
 			//check for wins
-			for(let k = 0; k < 4; k++){
-				checkwin(p[0], p[1], chesscolor[step % 2], mode[k]);
+			if(d){
+				for(let k = 0; k < 4; k++){
+					checkwin(p[0], p[1], chesscolor[step % 2], mode[k]);
+				}
 			}
 			step++;
 			break;
