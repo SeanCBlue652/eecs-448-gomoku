@@ -21,9 +21,9 @@
 	+The defect affects the last piece of the game
 	 placed by the ai. Sometimes it causes both player
 	 and ai to win
-	+
-	+
-	+
+	+Nov 08 2020 10:30 AM
+	+Peter Tso
+	+Added statement that only works when game has not won
 
 +Defect 02
 	+Nov 08 2020 10:02 AM

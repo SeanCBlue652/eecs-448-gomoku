@@ -66,8 +66,13 @@ board.addEventListener('click',function(a)
     	///////////////////////////////
     	
     	//this is a random ai
-    	//simpleRandomAi();
-    	simpleRudimentaryAi();
+	if(!flag){
+		//simpleRandomAi();
+    		simpleRudimentaryAi();
+    	}
+    	else if(flag){
+    		step++;
+    	}
     		
     		
     	}        
