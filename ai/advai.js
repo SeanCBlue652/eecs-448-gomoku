@@ -1,3 +1,4 @@
+//still need to work, this ai can not work, something need to fix
 let myWin=[];
 let comWin=[];
 let win=[];
