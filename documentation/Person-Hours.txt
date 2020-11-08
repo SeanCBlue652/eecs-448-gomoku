@@ -18,6 +18,7 @@ Peter Tso		|10/23			|1:11:46	Testing, etc.
 			|11/05			|2:03:04	Added Rudimentary AI
 			|11/08			|33:55		Added DefectList, Added Comments, Updated Rudimentary AI
 			|11/08			|11:24		Updated CSS
+			|11/08			|3:05:12	Updated index, Updated CSS, Added Testing
 			
 
 Jacob Johnston		|10/23			|40:00
