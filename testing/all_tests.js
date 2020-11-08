@@ -17,4 +17,7 @@ function runAllTests(){
 	
 	//run the new game testing
 	newgame_test();
+	
+	//test rudimentary ai
+	medai_test();
 }
