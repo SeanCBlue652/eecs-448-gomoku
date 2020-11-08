@@ -25,4 +25,11 @@
 	+
 	+
 
-
++Defect 02
+	+Nov 08 2020 10:02 AM
+	+Peter Tso
+	+The defect affects sometimes the AI. Sometimes the
+	 AI places a piece on a occupied place.
+	+
+	+
+	+
