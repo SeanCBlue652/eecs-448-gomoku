@@ -1,8 +1,8 @@
 //simple weights for output
 let i_weight = 100;
 let k_weight = 75;
-let q_weight = 500;
-let g_weight = 5000;
+let q_weight = 1000;
+let g_weight = 1100;
 
 /**
 *	@param bBoard Object that contains the map of the game
@@ -25,13 +25,15 @@ function assignValue(bBoard){
 	for(let i = 0; i < output.length; i++){
 		for(let k = 0; k < output.length; k++){
 			//check the win states of the current board and assign higher weights
-			for(let q = 0; q < 4; q++){
-				output[i][k] += gt_checkwin(i, k, 'white', mode[q], bBoard, q_weight);
-				output[i][k] += gt_checkwin(i ,k ,'black', mode[q], bBoard, g_weight);
-				
-				//if the board element is occupied, set to empty value
-				if(bBoard[i][k] == 'white' || bBoard[i][k] == 'black'){
-					output[i][k] = 0;
+			for(let g = 3; g <= 4; g++){
+				for(let q = 0; q < 4; q++){
+					output[i][k] += gt_checkwin(i, k, 'white', mode[q], bBoard, q_weight, g);
+					output[i][k] += gt_checkwin(i ,k ,'black', mode[q], bBoard, g_weight, g);
+					
+					//if the board element is occupied, set to empty value
+					if(bBoard[i][k] == 'white' || bBoard[i][k] == 'black'){
+						output[i][k] = 0;
+					}
 				}
 			}
 			//if the board element is white, assign all spaces surrounding with i_weight
@@ -146,7 +148,7 @@ function minPosition(bBoard){
 *	@post copies and tests for winning position
 *	@return value
 */
-function gt_checkwin(x,y,color, mode, dBoard, value){
+function gt_checkwin(x,y,color, mode, dBoard, value, rD){
 	//copy the map
 	let mapc = dBoard.map(x => x.map( y => y));
 	
@@ -156,8 +158,10 @@ function gt_checkwin(x,y,color, mode, dBoard, value){
 	//counting the number of instances
 	let count =0;
 	
+	let rV = 6 - (5 - rD);
+	
 	//check for pieces
-	for(let i=1;i<5;i++){
+	for(let i = 1;i < rV; i++){
         	if(mapc[x+i*mode[0]]){
             		if(mapc[x+i*mode[0]][y+i*mode[1]]==color){
                 		count++;
@@ -168,7 +172,7 @@ function gt_checkwin(x,y,color, mode, dBoard, value){
         	}
         
 	}
-	for(let j=1;j<5;j++){
+	for(let j = 1;j < rV; j++){
 		if(mapc[x-j*mode[0]]){	        
 			if(mapc[x-j*mode[0]][y-j*mode[1]]==color){
                 		count++;
@@ -180,7 +184,7 @@ function gt_checkwin(x,y,color, mode, dBoard, value){
         
     	}
     	//if winning, return value
-    	if(count>=4){
+    	if(count>=rD){
 		return value;
     	}
     	//else return 0
@@ -192,7 +196,7 @@ function gt_checkwin(x,y,color, mode, dBoard, value){
 *	@post Interface for AI
 */
 function simpleRudimentaryAi(){
-	zt_medai(map, 3);
+	zt_medai(map, 2);
 }
 
 /**
