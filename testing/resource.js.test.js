@@ -14,6 +14,13 @@ let e = 'error';
 let testf1 = ['testing/testing_images/001.png'];
 let testf2 = ['testing/testing_images/001.png', 'testing/testing_images/002.png'];
 
+/*
+*	Resource Tests
+*	@author Peter Tso
+*	@since 11/8/2020
+*	@last_modified 11/8/2020
+*	@Brief Tests the resource.js functions
+*/
 /**
 *	@pre must have global variables loaded
 *	@post tests the resource handling
@@ -29,6 +36,13 @@ function resource_test(){
 	test_toElem(5000);
 }
 
+/*
+*	Test Load Images
+*	@author Peter Tso
+*	@since 11/8/2020
+*	@last_modified 11/8/2020
+*	@Brief Tests the load images functions by equivalence
+*/
 /**
 *	@pre must have global variables loaded
 *	@post tests the loadImages between (0 - 2)
@@ -53,6 +67,13 @@ function test_loadImage(t){
 	
 }
 
+/*
+*	Test To Element
+*	@author Peter Tso
+*	@since 11/8/2020
+*	@last_modified 11/8/2020
+*	@Brief Tests To Element function by equivalence
+*/
 /**
 *	@pre must have global variables loaded
 *	Post tests the to element function
@@ -83,6 +104,13 @@ function test_toElem(t){
 	toElemTest(elemf2, testf1, test + 'missing element: ', s, e, t + 4000);
 }
 
+/*
+*	To Element Test
+*	@author Peter Tso
+*	@since 11/8/2020
+*	@last_modified 11/8/2020
+*	@Brief Unit testing of catching errors of toElem
+*/
 function toElemTest(elem, arr, message1, message2, message3, t){
 	//set timeout to compensate for async code
 	setTimeout(() => {
@@ -111,7 +139,22 @@ function toElemTest(elem, arr, message1, message2, message3, t){
 		console.log(message1 + message2);
 	}, t);
 }
-
+/*
+*	Load Image Test
+*	@author Peter Tso
+*	@since 11/8/2020
+*	@last_modified 11/8/2020
+*	@Brief Unit testing of loadImages by catching errors
+*/
+/**
+*	@param arr Object fileArray
+*	@param message1 String test name
+*	@param message2 String success message
+*	@param message3 String error message
+*	@param t Integer Timing
+*	@pre must have valid file array
+*	@post checks all promises and returns state of entire array
+*/
 function loadImageTest(arr, message1, message2, message3, t){
 	//set timeout to compenstate for async code
 	setTimeout(() => {
