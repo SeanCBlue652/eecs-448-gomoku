@@ -64,12 +64,15 @@ Samuel Gilchrist 	|11/8			|3:30:00	Documentation (Integration Strategies and Dep
 
 **********************************************************************************
 
-Total person-hours spent:
-Person-hours spent on coding:
-Estimated person-hours: 4-5 hours
+Total person-hours spent: 19h 30m 45s
+Person-hours spent on coding: approx 10h 39m 40s
+Estimated person-hours: 8 - 9 hours
+
+Note (project 4 note):
+The time was almost spot on for programming, but as with project 3, we underestimated documentation and testing.
 
 
-Note: The time spent programming was spot on, but the last two projects had far fewer, and far less comprehensive documentation.
+Note (project 3 note): The time spent programming was spot on, but the last two projects had far fewer, and far less comprehensive documentation.
 The doucmentation for this project took most of the time. As the person who did LOC, Software Architecture, and Design Paradigm,
 the documentation was heavy and quite unexpectedly difficult;I got stuck mutliple times. It is no doubt others on the team
 who also did documentation felt the same.
