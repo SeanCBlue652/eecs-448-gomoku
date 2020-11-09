@@ -1,0 +1,14 @@
+Integration Strategies:
+
+  In software engineering group projects, integration essentially describes the process of bringing individual software components, which might be worked on
+by smaller groups, together into one whole system, which represents the work of the entire team. The ultimate delivery of functionality for a project from
+integration often requires teams to act in careful coordination when linking their parts together. The easiest way to describe how our team integrated code
+from our team members for our project is to compare it to each of the various Integration Strategies which were covered in an earlier lecture. Integration
+strategies exist as one possible method for approaching the feasible actuality of integration as well as the steps teams can follow to ensure optimization
+and synergy in their work as a combined effort. In our group’s case for project 4, we started our effort for this project with an adequately working project
+which was developed for project 3, and our programming work for this segment simply involved fully developing our project by adding new test features and
+functionality to the solid base provided from project 3. Because of this, most of the work made by our team for project 4 is automatically related to
+Top-Down Integration, as the higher-level modules of our work have already been integrated and we are primarily adding lower level modules and testing
+their functionality. However, the AI components we have added in this project certainly belong to higher-level modules, and so we are effectively primarily
+following Sandwich Integration, as we are simultaneously testing new top-level modules (such as the AI components) along with lower level modules (such as
+player color choosing functionality).
