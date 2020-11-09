@@ -1,0 +1,31 @@
+Deployment Plan:
+
+    To create an accurate Deployment Plan for the game of Gomoku that has been created and refined by our team for our project 4 submission, sufficient
+  attention must be given to not only each of the steps that will be required to theoretically deploy the project’s product, but also to specific details
+  and questions like who would comprise the potential target market for our product, what will it cost to deploy our product, and what kind of additional
+  cost factors do have to consider when coming up with a reasonable deployment cost.
+…
+    The steps that would be required to deploy our product are entirely dependent on some of the main details of our product, such as the language it is
+  based on, where we want to deploy it, whether or not we are publishing the game independently, how much we plan to charge for the game, and what platforms
+  we would want to support. In any case, the first step in our deployment would be more bug-testing and potentially even code optimization when that is
+  necessary or applicable. The next step is to decide if we are going to publish and push our game forward independently, or try to get a publisher to pick
+  our project up. In the case of the latter, we would not have to worry about the costs to deploy our project, but the profits that we see would be affected,
+  and likely so would our involvement in the product’s updating and maintaining. For this plan, however, we will assume that we will be publishing our product
+  independently, which means that our next steps would be deciding the platforms that we want our product on, purchasing licenses to have our games officially
+  supported on these platforms, and deciding the price we want to charge for our game. Consequently, the next step would next be ensuring that our program
+  holds up on the other platforms that we choose to bring it to, then ultimately releasing our product to our chosen platforms. The final steps in our
+  deployment would be figuring out how to promote our new product, listening to user feedback, and updating/fixing our program when needed.
+…
+    The potential market of our program is dependent on what platforms we choose to release our game on, which in turn directly influences the cost of our
+  deployment, to be discussed in the next and final section. For the sake of this exercise, we will say that our group plans to release our game on iPhone,
+  Android, all three major modern consoles, PC, and Mac. Though this decision greatly increases our potential market, it doesn’t change the fact that our
+  simple, traditional game naturally caters to more casual players, likely in groups outside of the youngest demographics.
+…
+    Because of our plan to put our program on as many platforms as possible, the cost to deploy our app is certainly expensive. For the iPhone app store,
+  it would cost $99 to release our game as an app. For the Google Play store for Android phones, it would cost only $25 to release our first app. On
+  consoles, independent games are slightly harder to publish. To put our game on the Nintendo Switch’s eShop, we would have to talk to a Nintendo worker
+  directly and become an approved developer. Additionally, the exact costs and the price cut percentage from the Switch’s store for developers seem to be
+  covered in a NDA for developers. For the Xbox Live store, Microsoft has an Independent Developers at Xbox, or ID@Xbox, program, which lets independent
+  developers publish their games on a separate store from their main corporate front. In this case, there is no cost to submit a game for certification on
+  this front. The Playstation would be the hardest platform to gain access to, as Sony has tight restrictions and requirements for registering game
+  developers. For PC and Mac, we can simply release our game on itch.io for free.

@@ -33,3 +33,58 @@
     font-weight: bold;
     font-size: 28px;
 }
+
+#selectColor
+{
+    text-align: center;
+    margin: 10px auto;
+    display: block;
+    font-weight: bold;
+}
+
+div.ai_controls{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 5px;
+}
+
+button.aiSwitch{
+	color: white;
+	background-color: blue;
+	border-radius: 10px;
+}
+
+button.aiSwitch:hover{
+	color: darkslateblue;
+	background-color: powderblue;
+	
+}
+
+p.warning{
+	color: red;
+	font-family: monospace;
+}
+
+p.dWarning{
+	color: red;
+	font-family: monospace;
+}
+
+div.debugger{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 5px;
+}
+
+button.dbtn{
+	color: white;
+	background-color: darkred;
+	border-radius: 10px;
+}
+
+button.dbtn:hover{
+	background-color: red;
+}
+
