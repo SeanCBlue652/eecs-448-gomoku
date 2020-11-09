@@ -39,6 +39,10 @@ function test_pos_check(){
 	
 }
 
+/**
+ * 
+ * @param {bool} test 
+ */
 let functionPassFail = (test) => {
     if (test) {
         console.log("TEST PASSED");
