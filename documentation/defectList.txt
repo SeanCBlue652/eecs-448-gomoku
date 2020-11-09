@@ -4,7 +4,7 @@
 /////FORMAT/////
 ////////////////
 + Defect #
-+ DATE REPORTED
+	+ DATE REPORTED
 	+ WHO REPORTED IT
 	+ BRIEF DESCRIPTION OF DEFECT
 	+ DATE FIXED
@@ -15,7 +15,7 @@
 ////////////////
 
 
-+Defect 01
++Defect 01 Resolved
 	+Nov 08 2020 9:27 AM
 	+Peter Tso
 	+The defect affects the last piece of the game
@@ -41,6 +41,15 @@
 	 the img will load after code has ran, resulting in
 	 inaccurate results. Added setTimeout to combat this,
 	 however this is not optimal.
+	+
+	+
+	+
+
++Defect 04
+	+Nov 08 2020 7:29 PM
+	+Peter Tso
+	+The defect is that changing the color does not change
+	 the color of the piece.
 	+
 	+
 	+
