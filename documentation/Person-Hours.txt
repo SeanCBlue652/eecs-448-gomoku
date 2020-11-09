@@ -23,7 +23,7 @@ Tao Yang		|11/06			|1:30:00	Added selection: choose chess color
 			|11/08			|1:10:00	Try to fix bug and upload code
 Sean Cunningham
 
-Samuel Gilchrist 	|11/8			|1:30:00	Documentation
+Samuel Gilchrist 	|11/8			|3:30:00	Documentation (Integration Strategies and Deployment Plan)
 
 **********************************************************************************
 
