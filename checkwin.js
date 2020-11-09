@@ -13,6 +13,13 @@ let mode=
     [1,-1],
 ];
 
+/*
+*	Checkwin
+*	@author Tao Yang
+*	@since 10/22/2020
+*	@last_modified 10/24/2020
+*	@Brief Checks position and alerts player if someone wins
+*/
 /**
 *	@param x Integer X position
 *	@param y Integer Y position

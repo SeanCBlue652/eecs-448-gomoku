@@ -9,6 +9,13 @@
 *	https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image
 */
 
+/*
+*	Load Images
+*	@author Peter Tso
+*	@since 10/24/2020
+*	@last_modified 10/24/2020
+*	@Brief Load Images from array of filenames and returns array of Promises
+*/
 /**
 *	This takes one parameter
 *	@param {[String]} fileArray	: Takes a array of file names and loads it
@@ -44,6 +51,13 @@ function loadImages(fileArray){
 }
 //
 //	Note: Not used in this code
+/*
+*	Draw
+*	@author Peter Tso
+*	@since 10/24/2020
+*	@last_modified 10/24/2020
+*	@Brief Draw to the context a image at x and y
+*/
 /**
 *	This takes 3 parameters
 *	@param {Promise} idx     : Takes the element index of the resource array
@@ -57,6 +71,13 @@ function draw(idx, dx, dy){
 	});
 }
 
+/*
+*	To Element
+*	@author Peter Tso
+*	@since 10/24/2020
+*	@last_modified 11/8/2020
+*	@Brief Assigns a element with a image src
+*/
 /**
 *	This takes 2 parameters
 *	@param {Promise} idx	: Takes the element of the resource array
