@@ -63,4 +63,5 @@ function checkwin(x,y,color,mode)
         alert(color + " win!" );
         flag=true;
     }
+    return(flag);
 }
