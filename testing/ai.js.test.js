@@ -1,3 +1,7 @@
+/**
+*	@pre must have valid maps
+*	@post runs the test ai functions
+*/
 function ai_test(){
 	//testing the position checking
 	test_pos_check();
