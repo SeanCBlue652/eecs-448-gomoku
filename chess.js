@@ -71,7 +71,7 @@ board.addEventListener('click',function(a)
 			map[(dx-15)/30][(dy-15)/30]=chesscolor[step%2];
 			for(let i=0;i<4;i++)
 			{
-	  	  	if(checkwin((dx-15)/30,(dy-15)/30, chesscolor[step%2],mode[i])) {break;};
+	  	  	if(checkwin((dx-15)/30,(dy-15)/30, chesscolor[step%2],mode[i])) {return;};
 			}
 		}
 		//step through
@@ -90,7 +90,7 @@ board.addEventListener('click',function(a)
     		map[(dx-15)/30][(dy-15)/30] = chesscolor[step % 2]
     		//check if the piece wins the game
     		for(let i = 0; i < 4; i++){
-    			if(checkwin((dx-15)/30,(dy-15)/30, chesscolor[step % 2],mode[i])) {break;};
+    			if(checkwin((dx-15)/30,(dy-15)/30, chesscolor[step % 2],mode[i])) {return;};
     		}
     		//reduce the position cache for simpleAi
     		let u = Math.floor((dx-15)/30);
