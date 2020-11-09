@@ -1,4 +1,10 @@
+/**
+*	Global Variables
+*/
+//marks the state of the game
 let flag=false;
+
+//mode for chaning between horizontal, vertial, diagonal left and right
 let mode=
 [
     [1,0],
@@ -7,6 +13,14 @@ let mode=
     [1,-1],
 ];
 
+/**
+*	@param x Integer X position
+*	@param y Integer Y position
+*	@param color String color of the marker to check for
+*	@param mode Object check for certain positions
+*	@pre must have valid map and position
+*	@post assigns the flag and alerts the player of win
+*/
 function checkwin(x,y,color,mode)
 {
     let count =0;

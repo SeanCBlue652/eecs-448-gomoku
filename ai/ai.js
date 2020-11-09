@@ -20,9 +20,11 @@ let pos_cache = new Array();
 
 //assign a event listener for ai
 doc_aiSwitch.addEventListener('click', () => {
+	//if lock is engagedm then do not change state
 	if(lock_aiSwitch){
 		return;
 	}
+	//change state when switch is toggled
 	if(aiSwitch){
 		doc_aiSwitch.innerText = 'AI OFF';	
 	}
@@ -36,10 +38,22 @@ doc_aiSwitch.addEventListener('click', () => {
 *	MAIN CODE
 */
 
+/**
+*	@param [a] Eq a takes the first element
+*	@param [b] Eq b takes the second element
+*	@pre Must have valid values of array a, b that are comparable
+*	@post Returns the state of the array comparison
+*	@return e Bool returns the state of the array
+*/
 function pos_check(a, b){
 	return (a[0] == b[0]) ? ((a[1] == b[1]) ? true : false) : false;
 }
 
+/**
+*	@param Void
+*	@pre must have game map setup
+*	@post creates a movement 1D Array
+*/
 function simpleAiSetup(){
 	pos_cache = new Array();
 	for(let i = 0; i < map.length; i++){
@@ -49,26 +63,22 @@ function simpleAiSetup(){
 	}
 }
 
-function simpleRandomAi(){
+
+/**
+*	@param Void
+*	@pre must have simpleAiSetup() called beforehand
+*	@post assigns the board with a random piece
+*/
+function simpleRandomAi(d){
 	let arg0 = Math.floor(Math.random() * pos_cache.length);
 	let u = pos_cache[arg0][0];
 	let v = pos_cache[arg0][1];
-	if(isBlack)
-	{
-		drawchess((30 * u) + 15, (30 * v) + 15, chesscolor[step % 2]);
-		map[u][v] = chesscolor[step % 2];
-		for(let i = 0; i < 4; i++)
-		{
+	
+	drawchess((30 * u) + 15, (30 * v) + 15, chesscolor[step % 2]);
+	map[u][v] = chesscolor[step % 2];
+	if(d){
+		for(let i = 0; i < 4; i++){
 			checkwin(u, v, chesscolor[step % 2], mode[i]);
-		}
-	}
-	else
-	{
-		drawchess((30 * u) + 15, (30 * v) + 15, chesscolor[(step+1) % 2]);
-		map[u][v] = chesscolor[(step+1) % 2];
-		for(let i = 0; i < 4; i++)
-		{
-			checkwin(u, v, chesscolor[(step+1) % 2], mode[i]);
 		}
 	}
 	for(let i = 0; i < pos_cache.length; i++){

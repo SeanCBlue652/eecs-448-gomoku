@@ -1,0 +1,46 @@
+*-+ Defects +-*
+
+////////////////
+/////FORMAT/////
+////////////////
++ Defect #
++ DATE REPORTED
+	+ WHO REPORTED IT
+	+ BRIEF DESCRIPTION OF DEFECT
+	+ DATE FIXED
+	+ WHO FIXED IT
+	+ BRIEFT DESCRIPTION OF FIX
+////////////////
+/////FORMAT/////
+////////////////
+
+
++Defect 01
+	+Nov 08 2020 9:27 AM
+	+Peter Tso
+	+The defect affects the last piece of the game
+	 placed by the ai. Sometimes it causes both player
+	 and ai to win
+	+Nov 08 2020 10:30 AM
+	+Peter Tso
+	+Added statement that only works when game has not won
+
++Defect 02
+	+Nov 08 2020 10:02 AM
+	+Peter Tso
+	+The defect affects sometimes the AI. Sometimes the
+	 AI places a piece on a occupied place.
+	+
+	+
+	+
+	
++Defect 03
+	+Nov 08 2020 2:16 PM
+	+Peter Tso
+	+The defect affects the loadResources Test. Sometimes
+	 the img will load after code has ran, resulting in
+	 inaccurate results. Added setTimeout to combat this,
+	 however this is not optimal.
+	+
+	+
+	+
