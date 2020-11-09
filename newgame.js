@@ -10,6 +10,10 @@ btn.addEventListener("click",function()
 
 //clean the board
 //this place have some problem need to solve
+/**
+*	@pre must have context object loaded
+*	@post redraws the board
+*/
 function cleanBoard() 
 {
     context.fillStyle = "#e7be72";
@@ -17,6 +21,10 @@ function cleanBoard()
 }
 
 //start new game
+/**
+*	@pre must have global variables loaded
+*	@post zero fills the array and resets flags
+*/
 function newgame()
 {
     //zerofill array
