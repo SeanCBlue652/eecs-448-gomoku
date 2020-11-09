@@ -1,5 +1,5 @@
 //assigns a button element
-let btn =document.querySelector("#btn");
+let btn = document.querySelector("#btn");
 
 //on click reset the game
 btn.addEventListener("click",function()
