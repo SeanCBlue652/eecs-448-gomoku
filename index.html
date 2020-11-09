@@ -13,26 +13,34 @@
         <canvas id="board"width="450" height="450"></canvas>
         
         <!-- display the scoreboard -->
-        <li id="scoreBoard">
+        <div id="scoreBoard">
         	<scan id="disp1">Score: </scan>
         	<div id="imgsc">
 			<img id="img1"></img>
 			<scan id='sc1'>0</scan>
 			<img id="img2"></img>
 			<scan id='sc2'>0</scan>
-        </li>
-        
-        
+		</div>
+        </div>
+        <!-- display the section of choose chess color -->
         <div id="selectColor">
-            <div >Please first player choose the chess color</div>
-            <select id="option" onchange ="tt(this.id)">
+            <h3 >Please first player choose the chess color
+                <select id="option" onchange ="tt(this.id)">
                 <option value="Black">Black</option>
                 <option value="White">White</option>
-            </select>
+            </select></h3>
+            
         </div>
-        <li id="aiControls">
-        	<button id="ai_switch">AI OFF</button>
-        </li>
+        <!-- display the ai controls -->
+        <div id="aiControls" class="ai_controls">
+        	<button class="aiSwitch" id="ai_switch">AI OFF</button>
+        	<p class="warning"> &nbsp; *Once toggled, it will stay for duration of the entire game </p>
+        </div>
+        <!-- display the test controls -->
+        <div id="debugControls" class="debugger">
+        	<button class="dbtn" id="d_btn"> Run tests </button>
+        	<p class="dWarning"> &nbsp; *Toggle this to run tests. Results shown at console </p>
+        </div>
         
         
         <!-- code for loading in the images -->
@@ -52,8 +60,17 @@
         <script src="newgame.js"></script>
         
         <!-- code for ai -->
-	    <script src="ai/ai.js"></script>
-        <script src="ai/medai.js"></script>
-        <script src="ai/advai.js"></script>
-    </body>
+	<script src="ai/ai.js"></script>
+	<script src="ai/medai.js"></script>
+	
+	<!-- code for testing -->
+	<script src="testing/resource.js.test.js"></script>
+	<script src="testing/ai.js.test.js"></script>
+	<script src="testing/scoreboard.js.test.js"></script>
+	<script src="testing/checkwin.js.test.js"></script>
+	<script src="testing/newgame.js.test.js"></script>
+	<script src="testing/medai.js.test.js"></script>
+	
+	<!-- code for testing -->
+	<script src="testing/all_tests.js"></script>
 </html>

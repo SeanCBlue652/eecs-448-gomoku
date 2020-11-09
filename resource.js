@@ -63,6 +63,9 @@ function draw(idx, dx, dy){
 *	@param {Object} dElem	: Takes in img document object
 */
 function toElem(idx, dElem){
+	if(dElem == null){
+		throw 'missing dElem';
+	}
 	idx.then(img => {
 		//
 		//get the src and put into the dElem
