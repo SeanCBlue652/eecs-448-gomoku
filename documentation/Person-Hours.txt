@@ -43,7 +43,7 @@ Jacob Johnston		|10/23			|40:00
 Tao Yang		|10/21			|2:30:00	Coding
 			|10/22			|30:00		Coding
 			|10/25			|1:14:00	Working on Software Arcgitecture
-						|2:20:00	Maintenance plan 		
+						|2:20:00	Documentation (Maintenance plan) 		
 			
 Sean Cunningham	|10/16			|15:00		Created and Configured the Repository
 			|10/24			|30:00		Coding
