@@ -4,6 +4,13 @@
 let t = false;
 
 //run the runAllTests function at button press
+/*
+*	Debug Button Event Listener
+*	@author Peter Tso
+*	@since 11/8/2020
+*	@last_modified 11/8/2020
+*	@Brief Adds debug button for testing
+*/
 document.getElementById('d_btn').addEventListener('click', () => {
 	if(!t){
 		t = true;
@@ -14,7 +21,13 @@ document.getElementById('d_btn').addEventListener('click', () => {
 	}
 });
 
-
+/*
+*	Run All Tests
+*	@author Peter Tso
+*	@since 11/8/2020
+*	@last_modified 11/8/2020
+*	@Brief Run all current tests
+*/
 /**
 *	@pre Must have window loaded
 *	@post runs all tests, display to console

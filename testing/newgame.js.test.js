@@ -1,3 +1,10 @@
+/*
+*	New Game Test
+*	@author Peter Tso
+*	@since 11/8/2020
+*	@last_modified 11/8/2020
+*	@Brief Tests the new game function
+*/
 /**
 *	@pre must have global variables loaded
 *	@post runs the new game test
@@ -10,6 +17,13 @@ function newgame_test(){
 	zt_newgame_test();
 }
 
+/*
+*	zt New game Tests
+*	@author Peter Tso
+*	@since 11/8/2020
+*	@last_modified 11/8/2020
+*	@Brief Checks for zerofilled array, and state of flags
+*/
 /**
 *	@pre must have cleared board
 *	@post runs the test of clearing the board and checking global variables

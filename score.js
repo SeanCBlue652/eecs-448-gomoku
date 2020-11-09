@@ -2,6 +2,14 @@
 *	@file Code for drawing the player scores
 */
 
+
+/*
+*	Score Board Images
+*	@author Peter Tso
+*	@since 10/24/2020
+*	@last_modified 10/24/2020
+*	@Brief Assigns images to specific elements
+*/
 /**
 *	This puts the required images to the screen
 *	@param {Void}	: No parameters
@@ -32,6 +40,13 @@ function scoreBoardImages(){
 //	scores are arranged as [black_score, white_score]
 let score = [0, 0];
 
+/*
+*	Update Score
+*	@author Peter Tso
+*	@since 10/24/2020
+*	@last_modified 10/24/2020
+*	@Brief Updates the score and calls updateScoreBoard() to update player view
+*/
 /**
 *	This increments the score based on color
 *	@param {String} color	: Adds 1 to either array to update score
@@ -55,6 +70,13 @@ function updateScore(color){
 	updateScoreBoard();
 }
 
+/*
+*	Update Score Board
+*	@author Peter Tso
+*	@since 10/24/2020
+*	@last_modified 10/24/2020
+*	@Brief Update player view of scores
+*/
 /**
 *	This updates the document element to reflect score
 *	@param {Void}	: No parameters

@@ -12,6 +12,13 @@ let step=0;
 let map=[];
 let isBlack=true;
 
+/*
+*	TT
+*	@author Tao Yang
+*	@since 11/8/2020
+*	@last_modified 11/8/2020
+*	@Brief Handles the Change color switch
+*/
 /**
 *	@param id String id of a document element
 *	@pre must have document loaded
@@ -40,6 +47,21 @@ for(let i=0;i<15;i++)
         map[i][j]=0;
     }
 }
+
+/*
+*	Draw Chess
+*	@author Tao Yang
+*	@since 10/22/2020
+*	@last_modified 10/22/2020
+*	@Brief Draws the piece at a specific location and color
+*/
+/**
+*	@param x Integer X position
+*	@param y Integer Y position
+*	@param color String color
+*	@pre must have context loaded
+*	@post draws a circle onto context
+*/
 //draw chess
 function drawchess (x,y,color)
 {
@@ -52,6 +74,13 @@ function drawchess (x,y,color)
 }
 //place the chess
 //not finish do not do the function: the position has already place chess
+/*
+*	Board Event Listener
+*	@author Tao Yang
+*	@since 10/22/2020
+*	@last_modified 11/8/2020
+*	@Brief Adds event listener and executes main code
+*/
 board.addEventListener('click',function(a)
 {
     //calculate the position

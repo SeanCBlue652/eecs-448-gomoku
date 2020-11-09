@@ -1,3 +1,10 @@
+/*
+*	Score Tests
+*	@author Peter Tso
+*	@since 11/8/2020
+*	@last_modified 11/8/2020
+*	@Brief Test the Update Score function
+*/
 /**
 *	@pre Must have valid document elements
 *	@post runs the test_updateScore function
@@ -6,6 +13,13 @@ function score_test(){
 	test_updateScore();
 }
 
+/*
+*	Test Update Score
+*	@author Peter Tso
+*	@since 11/8/2020
+*	@last_modified 11/8/2020
+*	@Brief Runs all Unit testing of zt.
+*/
 /**
 *	@pre must be called by score_test();
 *	@post runs all zt_tests
@@ -37,6 +51,13 @@ function test_updateScore(){
 	zt_test_updateScore(50, 'yellow', test + 'yellow + 50: ', s, e);
 }
 
+/*
+*	zt Test Update Score
+*	@author Peter Tso
+*	@since 11/8/2020
+*	@last_modified 11/8/2020
+*	@Brief Unit testing of possible comparing values
+*/
 /**
 *	@param n Integer run the code n times
 *	@param color String color

@@ -1,3 +1,10 @@
+/*
+*	AI Test
+*	@author Peter Tso
+*	@since 11/8/2020
+*	@last_modified 11/8/2020
+*	@Brief Executes test for AI testing
+*/
 /**
 *	@pre must have valid maps
 *	@post runs the test ai functions
@@ -10,6 +17,13 @@ function ai_test(){
 	test_simpleRandomAi();
 }
 
+/*
+*	Test Position Check
+*	@author Peter Tso
+*	@since 11/8/2020
+*	@last_modified 11/8/2020
+*	@Brief Tests all possible cominations of Position Check
+*/
 /**
 *	@pre None
 *	@post logs the cases
@@ -39,6 +53,13 @@ function test_pos_check(){
 	
 }
 
+/*
+*	Test Clear
+*	@author Peter Tso
+*	@since 11/8/2020
+*	@last_modified 11/8/2020
+*	@Brief Clears the board and setup for new testing
+*/
 /**
 *	@pre must have required files
 *	@post clears the board and sets up for next test
@@ -51,6 +72,13 @@ function test_clear(){
 	simpleAiSetup();
 }
 
+/*
+*	Test Simple Random AI
+*	@author Peter Tso
+*	@since 11/8/2020
+*	@last_modified 11/8/2020
+*	@Brief Tests the simple Random AI operation
+*/
 /**
 *	@pre must have valid board
 *	@post logs the cases tested
@@ -89,6 +117,13 @@ function test_simpleRandomAi(){
 	test_clear();
 }
 
+/*
+*	zt Test Simple Random AI
+*	@author Peter Tso
+*	@since 11/8/2020
+*	@last_modified 11/8/2020
+*	@Brief Unit tests of simple random ai
+*/
 /**
 *	@param n Integer, run the code n times
 *	@param ms1 String test name
@@ -119,6 +154,13 @@ function zt_test_simpleRandomAi(n, ms1, ms2, ms3, d){
 	}
 }
 
+/*
+*	zt Test Position Check
+*	@author Peter Tso
+*	@since 11/8/2020
+*	@last_modified 11/8/2020
+*	@Brief Unit tests of Test Position Check
+*/
 /**
 *	@param a Object, array to compaer
 *	@param b Object, array to compare

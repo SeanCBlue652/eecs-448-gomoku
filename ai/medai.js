@@ -4,6 +4,14 @@ let k_weight = 75;
 let q_weight = 1000;
 let g_weight = 1100;
 
+
+/*
+*	Assign Value
+*	@author Peter Tso
+*	@since 11/6/2020
+*	@last_modified 11/8/2020
+*	@Brief Assigns a weight at position (i, j) for each i, j in map
+*/
 /**
 *	@param bBoard Object that contains the map of the game
 *	@pre Must have valid map object
@@ -59,6 +67,13 @@ function assignValue(bBoard){
 	return output;
 }
 
+/*
+*	zt Assign
+*	@author Peter Tso
+*	@since 11/6/2020
+*	@last_modified 11/6/2020
+*	@Brief Assigns a value based on conditions
+*/
 /**
 *	@param bBoard Object map containing the current state of the game
 *	@param dBoard Object map containing the assigned values of the game
@@ -85,6 +100,13 @@ function zt_assign(bBoard, dBoard, u, v, value, boundu, boundv){
 	}
 }
 
+/*
+*	Max Position
+*	@author Peter Tso
+*	@since 11/6/2020
+*	@last_modified 11/6/2020
+*	@Brief Finds the maximum position of a array
+*/
 /**
 *	@param bBoard Object map containing the assignValue
 *	@pre Must have valid bBoard of Integers
@@ -111,6 +133,13 @@ function maxPosition(bBoard){
 	return maxP;
 }
 
+/*
+*	Min Position
+*	@author Peter Tso
+*	@since 11/6/2020
+*	@last_modified 11/6/2020
+*	@Brief Finds minimum position of a array
+*/
 /**
 *	@param bBoard Object map containing the assignValue
 *	@pre Must have valid bBoard of Integers
@@ -137,6 +166,13 @@ function minPosition(bBoard){
 	return minP;
 }
 
+/*
+*	gt Checkwin
+*	@author Peter Tso
+*	@since 11/6/2020
+*	@last_modified 11/6/2020
+*	@Brief Modified version of checkwin to copy and place and return value
+*/
 /**
 *	@param x Integer X position
 *	@param y Integer Y position
@@ -191,6 +227,13 @@ function gt_checkwin(x,y,color, mode, dBoard, value, rD){
     	return 0;
 }
 
+/*
+*	Simple Rudimentary Ai
+*	@author Peter Tso
+*	@since 11/6/2020
+*	@last_modified 11/8/2020
+*	@Brief Interface for zt_medai function
+*/
 /**
 *	@pre Must have valid board
 *	@post Interface for AI
@@ -199,6 +242,13 @@ function simpleRudimentaryAi(){
 	zt_medai(map, 2, true);
 }
 
+/*
+*	Matrix Add
+*	@author Peter Tso
+*	@since 11/6/2020
+*	@last_modified 11/6/2020
+*	@Brief Adds two matricies and returns output
+*/
 /**
 *	@param matA Object 2D array of Integers
 *	@param matB Object 2D array of Integers
@@ -222,6 +272,13 @@ function matrixAdd(matA, matB){
 	return output;
 }
 
+/*
+*	Zero Matrix
+*	@author Peter Tso
+*	@since 11/6/2020
+*	@last_modified 11/6/2020
+*	@Brief zerofills array of length n
+*/
 /**
 *	@param length Integer length of the array
 *	@pre None
@@ -242,6 +299,13 @@ function zeroMatrix(length){
 	return output;
 }
 
+/*
+*	zt Medai
+*	@author Peter Tso
+*	@since 11/6/2020
+*	@last_modified 11/8/2020
+*	@Brief Computes the AI and places onto board
+*/
 /**
 *	@param bBoard Object the map containing the state of the game
 *	@param turns Integer the number of turns to check for
