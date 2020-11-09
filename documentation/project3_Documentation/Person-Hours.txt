@@ -2,7 +2,7 @@ Person-Hours Spent
 
 From Project 1 and Project 2, we have 1516* and 1230* lines of code respectively. The person-hours per lines of code are 1/108 [person-hour/loc] and 1/82 [person-hour/loc] respectively for each aformentioned project. The average is 1/94 [person-hour/loc].
 
-With the estimated lines of code for project 4 to be lower at around 400-500 lines of code, we estimate that it would take around 4-5 person-hours to code and implement the basic verison of Gomoku without AI, or extra features.
+With the estimated lines of code for project 3 to be lower at around 400-500 lines of code, we estimate that it would take around 4-5 person-hours to code and implement the basic verison of Gomoku without AI, or extra features.
 The estimation using lines of code does not include time doing documentation.
 
 *+- To all team members, please log the day-to-day hours worked on the project -+*
@@ -10,24 +10,27 @@ Log:
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Member			|Day			|Time Spent
 **********************************************************************************
-Peter Tso		|11/04			|40:00		Added AI
-			|11/05			|2:03:04	Added Rudimentary AI
-			|11/08			|33:55		Added DefectList, Added Comments, Updated Rudimentary AI
-			|11/08			|11:24		Updated CSS
-			|11/08			|3:05:12	Updated index, Updated CSS, Added Testing
+Peter Tso		|10/23			|1:11:46	Testing, etc.
+			|10/24			|26:16		Coding
+			|10/25			|6:02:32	Documentation(LOC, Software Architecture, Design Paradigm, cleanup)
 
-Jacob Johnston
+Jacob Johnston		|10/23			|40:00
+			|10/25			|45:00
 
-Tao Yang
-
-Sean Cunningham
-
-Samuel Gilchrist 	|11/8			|1:30:00	Documentation
-
+Tao Yang		|10/21			|2:30:00	Coding
+			|10/22			|30:00		Coding
+			|10/25			|1:14:00	Working on Software Arcgitecture
+			
+Sean Cunningham	|10/16			|15:00		Created and Configured the Repository
+			|10/24			|30:00		Coding
+			|10/25			|30:00		Created the UML Diagram
+					
+Samuel Gilchrist 	|10/24			|1:20:00	Documentation
+			|10/25			|30:00		Documentation
 **********************************************************************************
 
-Total person-hours spent:
-Person-hours spent on coding:
+Total person-hours spent: 16:39:-- hours
+Person-hours spent on coding: 4 hours
 Estimated person-hours: 4-5 hours
 
 
