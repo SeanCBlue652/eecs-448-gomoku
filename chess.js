@@ -12,9 +12,15 @@ let step=0;
 let map=[];
 let isBlack=true;
 
+/**
+*	@param id String id of a document element
+*	@pre must have document loaded
+*	@post assigns a value to isBlack boolean
+*/
 function tt(id)
 {
 	let aa=document.getElementById(id);
+	//assign values based on selected value
 	if(aa.value=="Black")
 	{
 		isBlack=true;
@@ -25,6 +31,7 @@ function tt(id)
 	}
 }
 
+//fill in the array
 for(let i=0;i<15;i++)
 {
     map[i]=[];
@@ -105,9 +112,6 @@ board.addEventListener('click',function(a)
     		step++;
     		
     	//call ai
-    	///////////////////////////////
-    	/////NOT IMPLEMENTED YET///////
-    	///////////////////////////////
     	
     	//this is a random ai
     	//work only if the game has not won
