@@ -18,8 +18,8 @@ Peter Tso		|11/04			|40:00		Added AI
 
 Jacob Johnston
 
-Tao Yang
-
+Tao Yang		|11/06			|1:30:00	Added selection: choose chess color
+						|2:00:00	Try to write the code of advAI
 Sean Cunningham
 
 Samuel Gilchrist 	|11/8			|1:30:00	Documentation
