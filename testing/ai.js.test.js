@@ -22,17 +22,32 @@ function test_pos_check(){
 	let elemc2 = [1, 3];
 	
 	//test several cases
-	zt_test_pos_check(empty, empty, true, test + 'empty: ', s, e);
-	zt_test_pos_check(empty, elema1, false, test + 'empty + elema1: ', s, e);
-	zt_test_pos_check(empty, elema2, false, test + 'empty + elema2: ', s, e);
-	zt_test_pos_check(empty, elemb2, false, test + 'empty + elemb2: ', s, e);
-	zt_test_pos_check(empty, elemc1, false, test + 'empty + elemc1: ', s, e);
-	zt_test_pos_check(elema1, elema2, false, test + 'elema1 + elema2: ', s, e);
-	zt_test_pos_check(elema2, elema2, true, test + 'elema2 + e;ema2: ', s, e);
-	zt_test_pos_check(elema1, elema1, true, test + 'elema1 + elema1: ', s, e);
-	zt_test_pos_check(elema2, elemc2, false, test + 'elema2 + elemc2: ', s, e);
+	let testList = [
+	zt_test_pos_check(empty, empty, true, test + 'empty: ', s, e),
+	zt_test_pos_check(empty, elema1, false, test + 'empty + elema1: ', s, e),
+	zt_test_pos_check(empty, elema2, false, test + 'empty + elema2: ', s, e),
+	zt_test_pos_check(empty, elemb2, false, test + 'empty + elemb2: ', s, e),
+	zt_test_pos_check(empty, elemc1, false, test + 'empty + elemc1: ', s, e),
+	zt_test_pos_check(elema1, elema2, false, test + 'elema1 + elema2: ', s, e),
+	zt_test_pos_check(elema2, elema2, true, test + 'elema2 + elema2: ', s, e),
+	zt_test_pos_check(elema1, elema1, true, test + 'elema1 + elema1: ', s, e),
+	zt_test_pos_check(elema2, elemc2, false, test + 'elema2 + elemc2: ', s, e)
+	]
+	testList.forEach(t => {
+		functionPassFail(t);
+	})
 	
-	
+}
+
+let functionPassFail = (test) => {
+    if (test) {
+        console.log("TEST PASSED");
+        return;
+    }
+    else {
+        console.log("TEST FAILED");
+        return;
+    }
 }
 
 /**
@@ -113,6 +128,7 @@ function zt_test_simpleRandomAi(n, ms1, ms2, ms3, d){
 	else{
 		console.log(ms1 + ms3);
 	}
+	return(state);
 }
 
 /**
@@ -143,7 +159,8 @@ function zt_test_pos_check(a, b, expected, m1, m2, m3){
 		else{
 			console.log(m1 + m3);
 		}
-		return;
+		return(res == expected);
 	}
 	console.log(m1 + m3);
+	return(res == expected)
 }
