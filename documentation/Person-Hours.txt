@@ -34,10 +34,21 @@ Tao Yang		|10/21			|2:30:00	Coding
 Sean Cunningham	|10/16			|15:00		Created and Configured the Repository
 			|10/24			|30:00		Coding
 			|10/25			|30:00		Created the UML Diagram
+			|11/8			|2:00:00	Bugfixes, Created the video presentation, handled merge conflicts and pull requests
 			
 					
 Samuel Gilchrist 	|10/24			|1:20:00	Documentation
 			|10/25			|30:00		Documentation
+
+Jacob Johnston
+
+Tao Yang		|11/06			|1:30:00	Added selection: choose chess color
+						|2:00:00	Try to write the code of advAI
+			|11/08			|1:10:00	Try to fix bug and upload code
+
+
+Samuel Gilchrist 	|11/8			|3:30:00	Documentation (Integration Strategies and Deployment Plan)
+
 **********************************************************************************
 
 Total person-hours spent:
