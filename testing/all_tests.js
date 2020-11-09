@@ -1,3 +1,6 @@
+/**
+*	global variable
+*/
 let t = false;
 
 //run the runAllTests function at button press
