@@ -1,4 +1,10 @@
-
+/*
+*	Test Checkwin
+*	@author Peter Tso
+*	@since 11/8/2020
+*	@last_modified 11/8/2020
+*	@Brief Tests the check win functions
+*/
 /**
 *	@pre Must have valid board
 *	@post test the checkwin function
@@ -95,6 +101,13 @@ function test_checkwin(){
 	test_clear();
 }
 
+/*
+*	PMT
+*	@author Peter Tso
+*	@since 11/8/2020
+*	@last_modified 11/8/2020
+*	@Brief Assigns a value at map for testing
+*/
 /**
 *	@param x Integer X position
 *	@param y Integer Y position
@@ -106,6 +119,13 @@ function pmt(x, y, color){
 	map[x][y] = color;
 }
 
+/*
+*	zt Test Checkwin
+*	@author Peter Tso
+*	@since 11/8/2020
+*	@last_modified 11/8/2020
+*	@Brief Unit tests for checkwin, checks for win status
+*/
 /**
 *	@param f Function function that executes before test
 *	@param color String color

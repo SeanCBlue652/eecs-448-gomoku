@@ -1,3 +1,10 @@
+/*
+*	Medai Test
+*	@author Peter Tso
+*	@since 11/8/2020
+*	@last_modified 11/8/2020
+*	@Brief Tests the MedAI functions
+*/
 /**
 *	@pre must have valid board
 *	@post runs the test for function zt_medai
@@ -39,6 +46,13 @@ function medai_test(){
 	
 }
 
+/*
+*	zt Simple Rudimentary AI
+*	@author Peter Tso
+*	@since 11/8/2020
+*	@last_modified 11/8/2020
+*	@Brief Modified version fo Simple Rudimentary AI for testing purposes
+*/
 /**
 *	@pre must have valid board
 *	@post runs a modified version of simpleRudimentaryAi
@@ -47,6 +61,13 @@ function zt_simpleRudimentaryAi(){
 	zt_medai(map, 2, false);
 }
 
+/*
+*	zt MedAI Test
+*	@author Peter Tso
+*	@since 11/8/2020
+*	@last_modified 11/8/2020
+*	@Brief Unit tests of simple rudimentary ai operation
+*/
 /**
 *	@param n Integer run the ai for N times
 *	@param m1 String test name

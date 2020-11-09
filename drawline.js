@@ -10,6 +10,13 @@ let context=board.getContext("2d");
 //set the style
 context.strokeStyle="#000000";
 
+/*
+*	Window On Load
+*	@author Tao Yang
+*	@since 10/21/2020
+*	@last_modified 11/4/2020
+*	@Brief Setup the game
+*/
 //run this function on load
 window.onload=function()
 {
@@ -24,6 +31,13 @@ window.onload=function()
     drawline();
 }
 //draw the line of board 
+/*
+*	Draw Line
+*	@author Tao Yang
+*	@since 10/21/2020
+*	@last_modified 10/21/2020
+*	@Brief Draws the background for the game
+*/
 /**
 *	@pre must have valid board and context elements
 *	@post creates the graphic for the board

@@ -38,6 +38,12 @@ doc_aiSwitch.addEventListener('click', () => {
 *	MAIN CODE
 */
 
+/*
+*	Position Check
+*	@author Peter Tso
+*	@since 11/4/2020
+*	@last_modified 11/4/2020
+*/
 /**
 *	@param [a] Eq a takes the first element
 *	@param [b] Eq b takes the second element
@@ -49,6 +55,12 @@ function pos_check(a, b){
 	return (a[0] == b[0]) ? ((a[1] == b[1]) ? true : false) : false;
 }
 
+/*
+*	Simple AI Setup
+*	@author Peter Tso
+*	@since 11/4/2020
+*	@last_modified 11/4/2020
+*/
 /**
 *	@param Void
 *	@pre must have game map setup
@@ -63,9 +75,14 @@ function simpleAiSetup(){
 	}
 }
 
-
+/*
+*	Simple Random AI
+*	@author Peter Tso
+*	@since 11/4/2020
+*	@last_modified 11/8/2020
+*/
 /**
-*	@param Void
+*	@param Boolean	for testing purporses
 *	@pre must have simpleAiSetup() called beforehand
 *	@post assigns the board with a random piece
 */
